@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo Javascript</title>
+    <title>Jogo da velha em javascript</title>
+    <link rel="icon" href="img/velha.png" type="image/icon type">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap">
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-<p>
-    Use as setas esquerda, direita e cima para mover.
-</p>
-<p class="info">
-    The map data is fully customisable and scriptable (all contained within the "map" variable). See the comments in the code for instructions.
-</p>
-<br>
-<script src="JS/index.js"></script>
+    <div class="container">
+        <h1 id="playerText">Jogo da velha</h1>
+        <!--Tabela onde o jogo irá acontecer-->
+        <button id="restartBtn">Recomeçar</button>
+        <div id="gameboard">
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
+        </div>
+    </div>
+    <script src="JS/index.js"></script>
 </body>
 </html>
